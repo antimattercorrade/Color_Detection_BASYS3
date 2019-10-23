@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Mon Oct 21 16:15:10 2019
+| Date         : Thu Oct 24 00:23:10 2019
 | Host         : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vga_syncIndex_control_sets_placed.rpt
 | Design       : vga_syncIndex

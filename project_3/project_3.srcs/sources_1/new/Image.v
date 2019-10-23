@@ -3,12 +3,12 @@
 
 module vga_syncIndex(
 clock,reset,         
-red, green, blue,temp                    
+red, green, blue,temp,temp1                    
 );
 
     input clock;
     input reset;
-    output [7:0] temp;
+    output [7:0] temp,temp1;
     
    reg clk;
    initial begin
@@ -29,7 +29,7 @@ red, green, blue,temp
  
 	reg read = 0;
 	reg [13:0] addra = 0;
-	reg [7:0] in1 = 0;
+	wire [7:0] in1 = 0;
 	wire [7:0] out2;
 	
 	
@@ -50,6 +50,8 @@ assign red=0;
 assign blue=0;
 assign green=0;
 assign temp= {out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out2[0]};
+assign in1= {1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b1};
+assign temp1={out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out2[0]};
 
 /*always @(posedge clk)
 	begin		

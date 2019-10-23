@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Mon Oct 21 16:15:47 2019
+| Date             : Thu Oct 24 00:23:47 2019
 | Host             : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_syncIndex_power_routed.rpt -pb vga_syncIndex_power_summary_routed.pb -rpx vga_syncIndex_power_routed.rpx
 | Design           : vga_syncIndex
@@ -59,7 +59,7 @@ Table of Contents
 |   Others       |     0.000 |        5 |       --- |             --- |
 | Signals        |    <0.001 |        9 |       --- |             --- |
 | Block RAM      |    <0.001 |        1 |        50 |            2.00 |
-| I/O            |    <0.001 |       21 |       106 |           19.81 |
+| I/O            |    <0.001 |       29 |       106 |           27.36 |
 | Static Power   |     0.068 |          |           |                 |
 | Total          |     0.070 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

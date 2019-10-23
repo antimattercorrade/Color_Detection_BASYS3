@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Mon Oct 21 16:15:47 2019
+| Date         : Thu Oct 24 00:23:47 2019
 | Host         : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file vga_syncIndex_timing_summary_routed.rpt -pb vga_syncIndex_timing_summary_routed.pb -rpx vga_syncIndex_timing_summary_routed.rpx -warn_on_violation
 | Design       : vga_syncIndex
@@ -82,7 +82,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 8 ports with no output delay specified. (HIGH)
+ There are 16 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -200,9 +200,9 @@ Slack (MET) :             8.322ns  (required time - arrival time)
   Data Path Delay:        1.720ns  (logic 0.642ns (37.327%)  route 1.078ns (62.673%))
   Logic Levels:           1  (LUT1=1)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.787ns = ( 14.787 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.086ns
-    Clock Pessimism Removal (CPR):    0.299ns
+    Destination Clock Delay (DCD):    4.783ns = ( 14.783 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.081ns
+    Clock Pessimism Removal (CPR):    0.298ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -218,14 +218,14 @@ Slack (MET) :             8.322ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clock_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clock_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           1.565     5.086    clock_IBUF_BUFG
-    SLICE_X8Y12          FDRE                                         r  clk_reg/C
+                         net (fo=1, routed)           1.560     5.081    clock_IBUF_BUFG
+    SLICE_X8Y32          FDRE                                         r  clk_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X8Y12          FDRE (Prop_fdre_C_Q)         0.518     5.604 f  clk_reg/Q
-                         net (fo=3, routed)           1.078     6.682    clk
-    SLICE_X8Y12          LUT1 (Prop_lut1_I0_O)        0.124     6.806 r  clk_i_1/O
-                         net (fo=1, routed)           0.000     6.806    p_0_in
-    SLICE_X8Y12          FDRE                                         r  clk_reg/D
+    SLICE_X8Y32          FDRE (Prop_fdre_C_Q)         0.518     5.599 f  clk_reg/Q
+                         net (fo=3, routed)           1.078     6.677    clk
+    SLICE_X8Y32          LUT1 (Prop_lut1_I0_O)        0.124     6.801 r  clk_i_1/O
+                         net (fo=1, routed)           0.000     6.801    p_0_in
+    SLICE_X8Y32          FDRE                                         r  clk_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clock_pin rise edge)
@@ -235,14 +235,14 @@ Slack (MET) :             8.322ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clock_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clock_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           1.446    14.787    clock_IBUF_BUFG
-    SLICE_X8Y12          FDRE                                         r  clk_reg/C
-                         clock pessimism              0.299    15.086    
-                         clock uncertainty           -0.035    15.051    
-    SLICE_X8Y12          FDRE (Setup_fdre_C_D)        0.077    15.128    clk_reg
+                         net (fo=1, routed)           1.442    14.783    clock_IBUF_BUFG
+    SLICE_X8Y32          FDRE                                         r  clk_reg/C
+                         clock pessimism              0.298    15.081    
+                         clock uncertainty           -0.035    15.046    
+    SLICE_X8Y32          FDRE (Setup_fdre_C_D)        0.077    15.123    clk_reg
   -------------------------------------------------------------------
-                         required time                         15.128    
-                         arrival time                          -6.806    
+                         required time                         15.123    
+                         arrival time                          -6.801    
   -------------------------------------------------------------------
                          slack                                  8.322    
 
@@ -263,9 +263,9 @@ Slack (MET) :             0.493ns  (arrival time - required time)
   Data Path Delay:        0.613ns  (logic 0.209ns (34.098%)  route 0.404ns (65.902%))
   Logic Levels:           1  (LUT1=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.959ns
-    Source Clock Delay      (SCD):    1.446ns
-    Clock Pessimism Removal (CPR):    0.513ns
+    Destination Clock Delay (DCD):    1.955ns
+    Source Clock Delay      (SCD):    1.443ns
+    Clock Pessimism Removal (CPR):    0.512ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -276,14 +276,14 @@ Slack (MET) :             0.493ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           0.563     1.446    clock_IBUF_BUFG
-    SLICE_X8Y12          FDRE                                         r  clk_reg/C
+                         net (fo=1, routed)           0.560     1.443    clock_IBUF_BUFG
+    SLICE_X8Y32          FDRE                                         r  clk_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X8Y12          FDRE (Prop_fdre_C_Q)         0.164     1.610 f  clk_reg/Q
-                         net (fo=3, routed)           0.404     2.014    clk
-    SLICE_X8Y12          LUT1 (Prop_lut1_I0_O)        0.045     2.059 r  clk_i_1/O
-                         net (fo=1, routed)           0.000     2.059    p_0_in
-    SLICE_X8Y12          FDRE                                         r  clk_reg/D
+    SLICE_X8Y32          FDRE (Prop_fdre_C_Q)         0.164     1.607 f  clk_reg/Q
+                         net (fo=3, routed)           0.404     2.011    clk
+    SLICE_X8Y32          LUT1 (Prop_lut1_I0_O)        0.045     2.056 r  clk_i_1/O
+                         net (fo=1, routed)           0.000     2.056    p_0_in
+    SLICE_X8Y32          FDRE                                         r  clk_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clock_pin rise edge)
@@ -293,13 +293,13 @@ Slack (MET) :             0.493ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clock_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           0.832     1.959    clock_IBUF_BUFG
-    SLICE_X8Y12          FDRE                                         r  clk_reg/C
-                         clock pessimism             -0.513     1.446    
-    SLICE_X8Y12          FDRE (Hold_fdre_C_D)         0.120     1.566    clk_reg
+                         net (fo=1, routed)           0.828     1.955    clock_IBUF_BUFG
+    SLICE_X8Y32          FDRE                                         r  clk_reg/C
+                         clock pessimism             -0.512     1.443    
+    SLICE_X8Y32          FDRE (Hold_fdre_C_D)         0.120     1.563    clk_reg
   -------------------------------------------------------------------
-                         required time                         -1.566    
-                         arrival time                           2.059    
+                         required time                         -1.563    
+                         arrival time                           2.056    
   -------------------------------------------------------------------
                          slack                                  0.493    
 
@@ -316,11 +316,11 @@ Sources:            { clock }
 
 Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
 Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clock_IBUF_BUFG_inst/I
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X8Y12    clk_reg/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y12    clk_reg/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y12    clk_reg/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y12    clk_reg/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y12    clk_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X8Y32    clk_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y32    clk_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y32    clk_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y32    clk_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y32    clk_reg/C
 
 
 

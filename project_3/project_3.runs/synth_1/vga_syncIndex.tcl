@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,7 +33,7 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo {c:/Users/Kushagra Sharma/Downloads/Digital Systems/project_3/project_3.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/your_mem.coe}}
-add_files {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/FLAG_B24.coe}}
+add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/FLAG_B24.coe}}
 read_verilog -library xil_defaultlib {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/project_3/project_3.srcs/sources_1/new/Image.v}}
 read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc}}]
