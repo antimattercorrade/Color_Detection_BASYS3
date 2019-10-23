@@ -31,7 +31,7 @@ red, green, blue,temp,temp1
 	reg [13:0] addra = 0;
 	wire [7:0] in1 = 0;
 	wire [7:0] out2;
-	
+	assign in1= {1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b1};
 	
 blk_mem_gen_0  inst1(
   .clka(clk), 
@@ -50,7 +50,8 @@ assign red=0;
 assign blue=0;
 assign green=0;
 assign temp= {out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out2[0]};
-assign in1= {1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b1};
+
+
 assign temp1={out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out2[0]};
 
 /*always @(posedge clk)
