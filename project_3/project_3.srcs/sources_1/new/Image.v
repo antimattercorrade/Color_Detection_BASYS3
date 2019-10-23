@@ -1,27 +1,9 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/03/2018 04:26:40 PM
-// Design Name: 
-// Module Name: check
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01  - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 module vga_syncIndex(
-clock,reset,         //inputs - sel_module(select required function), reset(to switch on and off), val(give a value to adjust brightness and filters)                        // hsync and vsync for the working of monitor
-red, green, blue,temp                    // red, green and blue output pixels
+clock,reset,         
+red, green, blue,temp                    
 );
 
     input clock;
@@ -52,12 +34,12 @@ red, green, blue,temp                    // red, green and blue output pixels
 	
 	
 blk_mem_gen_0  inst1(
-  .clka(clk), // input clka
-  .wea(read), // input [0 : 0] wea
-  .addra(addra), // input [14 : 0] addra
+  .clka(clk), 
+  .wea(read), 
+  .addra(addra), 
   .ena(1),
-  .dina(in1), // input [95 : 0] dina
-  .douta(out2) // output [95 : 0] douta
+  .dina(in1), 
+  .douta(out2) 
 );
 
  
