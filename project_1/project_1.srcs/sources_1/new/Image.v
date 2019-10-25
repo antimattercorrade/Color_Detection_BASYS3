@@ -19,18 +19,18 @@ count
     clk<=~clk;
    end
    
-   reg [39:0] color={8'd224,8'd0,8'd28,8'd252,8'd3};
-   reg [7:0] white=8'd255;
-   output reg [4:0] count=0;
+   reg [39:0] color={8'd224,8'd0,8'd28,8'd252,8'd3}; // color array for checking the predifined colors
+   reg [7:0] white=8'd255;// background color
+   output reg [4:0] count=0;// count[0] for red, count[1] for black and so on... to be changed to five arrays for each color 
    reg [16:0] top_most=0,temp=0;
    integer i=0,j=0;
-   reg r=0;
+   reg r=0;//radius
    wire rd;
-   reg [7:0] out1;
+   reg [7:0] out1;// takes output from BRAM in read mode
  
-	reg read = 0;
+	reg read = 0;// read==0 read mode ... read==1 write mode
 	reg [16:0] addr = 0;
-	reg [7:0] in = 0;
+	reg [7:0] in = 0;// inuput to BRAM in write mode
 	wire [7:0] out;
 	
 blk_mem_gen_0  inst1(
@@ -41,11 +41,11 @@ blk_mem_gen_0  inst1(
   .dina(in), 
   .douta(out) 
 );
-reg flag=0;
+reg flag=0;// it becomes 0 when radius is calculated for a circle and then whitening the circle occurs in always block 
 
 always @(posedge clk)
 	begin		
-	   if(flag==0)
+	   if(flag==0)// check for color in array and make r=49, store top most address, increase specific color count
 	       begin 
             val={out[7],out[6],out[5],out[4],out[3],out[2],out[1],out[0]};
             curr_pixel=val;
@@ -103,7 +103,7 @@ always @(posedge clk)
                   end
                      
                end
-               else 
+               else // whiten the rectangular area around the circle
                     begin
                      if(addr<=(top_most + (430*2*r) + r))
                         begin
