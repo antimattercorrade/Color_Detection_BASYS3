@@ -1,6 +1,6 @@
 
 from PIL import Image
-img = Image.open('Image4.png')
+img = Image.open('Image5.png')
 px1 = img.load()
 px = {}
 for i in range(img.height):
@@ -18,6 +18,7 @@ def make_white(px,top_most,r):
     colours[f(px,top_most[0],top_most[1])][1] = colours[f(px,top_most[0],top_most[1])][1] + 1
     j,i = top_most[0]-r,top_most[1]
     while(i <= top_most[1] + 2*r):
+        j = top_most[0]-r
         while(j <= top_most[0] + r):
             px[j,i] = (255,255,255)
             j += 1
@@ -45,14 +46,6 @@ while( i < img.height):
             # print(r)
             # exit()
             make_white(px,top_most,r)
-            # colours[f(px,top_most[0],top_most[1])][1] = colours[f(px,top_most[0],top_most[1])][1] + 1
-            # k,l = top_most[0]-r,top_most[1]
-            # while(l <= top_most[1] + 2*r):
-            #     while(k <= top_most[0] + r):
-            #         px[k,l] = (255,255,255)
-            #         k += 1
-            #     l += 1
-            # print(px[j,i])
         j += 1
     i += 1
 print(colours)
