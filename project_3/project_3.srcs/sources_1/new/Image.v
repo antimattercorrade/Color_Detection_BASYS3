@@ -27,7 +27,7 @@ red, green, blue,temp,temp1
 	output [3:0] blue;
 
  
-	reg read = 0;
+	reg read = 1;
 	reg [13:0] addra = 0;
 	wire [7:0] in1 = 0;
 	wire [7:0] out2;
@@ -54,19 +54,19 @@ assign temp= {out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out
 
 assign temp1={out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out2[0]};
 
-/*always @(posedge clk)
+always @(posedge clk)
 	begin		
            
                //tempblue =  {out2[23], out2[22], out2[21], out2[20], out2[19], out2[18], out2[17], out2[16]};
                 //tempgreen = {out2[15], out2[14], out2[13], out2[12], out2[11], out2[10], out2[9], out2[8]};
-                temp= {out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out2[0]};
+                //temp= {out2[7], out2[6], out2[5], out2[4], out2[3], out2[2], out2[1], out2[0]};
                 if(addra <18399)
                     addra = addra + 1;
                 else
                     addra = 0;
             
            
-        end    */
+        end    
        
     endmodule
 
