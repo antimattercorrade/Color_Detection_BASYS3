@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/Users/Kushagra Sharma/Downloads/project_4/project_4.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/Kushagra Sharma/Downloads/Digital Systems/project_4/project_4.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e8a0f9044f944beea3599badf8a967f8"/>
