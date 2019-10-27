@@ -1,6 +1,6 @@
 
 from PIL import Image
-img = Image.open('Image4_reduced.png')
+img = Image.open('Image6_reduced.jpg')
 px1 = img.load()
 px = {}
 for i in range(img.height):
