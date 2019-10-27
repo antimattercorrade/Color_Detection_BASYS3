@@ -25,22 +25,18 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Users/Kushagra Sharma/Downloads/project_1/project_1.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Kushagra Sharma/Downloads/project_1/project_1.xpr} [current_project]
+set_property webtalk.parent_dir E:/digital-systems/Digital_Systems/project_2_test/project_2_test.cache/wt [current_project]
+set_property parent.project_path E:/digital-systems/Digital_Systems/project_2_test/project_2_test.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo {c:/Users/Kushagra Sharma/Downloads/project_1/project_1.cache/ip} [current_project]
+set_property ip_output_repo e:/digital-systems/Digital_Systems/project_2_test/project_2_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/your_mem.coe}}
-add_files {{C:/Users/Kushagra Sharma/Downloads/ES 203/FLAG_B24.coe}}
-add_files {{C:/Users/Kushagra Sharma/Downloads/ES 203/Image4_reduced.coe}}
-add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image5_reduced.coe}}
-add_files {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/Image4_reduced.coe}}
-read_verilog -library xil_defaultlib {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.srcs/sources_1/new/Image.v}}
-read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/Kushagra Sharma/Downloads/project_1/project_1.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc}}]
+add_files E:/digital-systems/Digital_Systems/Image4_reduced.coe
+read_verilog -library xil_defaultlib E:/digital-systems/Digital_Systems/project_2_test/project_2_test.srcs/sources_1/new/Image.v
+read_ip -quiet E:/digital-systems/Digital_Systems/project_2_test/project_2_test.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all e:/digital-systems/Digital_Systems/project_2_test/project_2_test.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -50,8 +46,8 @@ set_property used_in_implementation false [get_files -all {{c:/Users/Kushagra Sh
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.srcs/constrs_1/new/constr1.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.srcs/constrs_1/new/constr1.xdc}}]
+read_xdc E:/digital-systems/Digital_Systems/project_2_test/project_2_test.srcs/constrs_1/new/constr1.xdc
+set_property used_in_implementation false [get_files E:/digital-systems/Digital_Systems/project_2_test/project_2_test.srcs/constrs_1/new/constr1.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

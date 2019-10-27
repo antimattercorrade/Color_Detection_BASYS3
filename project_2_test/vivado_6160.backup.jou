@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 27 14:36:42 2019
+# Process ID: 6160
+# Current directory: E:/digital-systems/Digital_Systems/project_2_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8612 E:\digital-systems\Digital_Systems\project_2_test\project_2_test.xpr
+# Log file: E:/digital-systems/Digital_Systems/project_2_test/vivado.log
+# Journal file: E:/digital-systems/Digital_Systems/project_2_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/digital-systems/Digital_Systems/project_2_test/project_2_test.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe}}] -no_script -reset -force -quiet
+remove_files  {{E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe}}
+remove_files  {{E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe}}
+export_ip_user_files -of_objects  [get_files {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}}] -no_script -reset -force -quiet
+remove_files  {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}}
+remove_files  {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}}
+remove_files  {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}}

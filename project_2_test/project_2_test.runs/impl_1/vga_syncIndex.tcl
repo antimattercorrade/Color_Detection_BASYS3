@@ -71,14 +71,14 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Kushagra Sharma/Downloads/project_1/project_1.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Kushagra Sharma/Downloads/project_1/project_1.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.cache/ip}} [current_project]
+  set_property webtalk.parent_dir E:/digital-systems/Digital_Systems/project_2_test/project_2_test.cache/wt [current_project]
+  set_property parent.project_path E:/digital-systems/Digital_Systems/project_2_test/project_2_test.xpr [current_project]
+  set_property ip_output_repo E:/digital-systems/Digital_Systems/project_2_test/project_2_test.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.runs/synth_1/vga_syncIndex.dcp}}
-  read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
-  read_xdc {{C:/Users/Kushagra Sharma/Downloads/project_1/project_1.srcs/constrs_1/new/constr1.xdc}}
+  add_files -quiet E:/digital-systems/Digital_Systems/project_2_test/project_2_test.runs/synth_1/vga_syncIndex.dcp
+  read_ip -quiet E:/digital-systems/Digital_Systems/project_2_test/project_2_test.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
+  read_xdc E:/digital-systems/Digital_Systems/project_2_test/project_2_test.srcs/constrs_1/new/constr1.xdc
   link_design -top vga_syncIndex -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -1,0 +1,183 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 6160
+License: Customer
+
+Current time: 	Sun Oct 27 14:36:54 IST 2019
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 12 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Shivam
+User home directory: C:/Users/Shivam
+User working directory: E:/digital-systems/Digital_Systems/project_2_test
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2019.1
+RDI_DATADIR: D:/Vivado/2019.1/data
+RDI_BINDIR: D:/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/Shivam/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/Shivam/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/Shivam/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	E:/digital-systems/Digital_Systems/project_2_test/vivado.log
+Vivado journal file location: 	E:/digital-systems/Digital_Systems/project_2_test/vivado.jou
+Engine tmp dir: 	E:/digital-systems/Digital_Systems/project_2_test/.Xil/Vivado-6160-shivam70
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2019.1
+XILINX_SDK: D:/SDK/2019.1
+XILINX_VIVADO: D:/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 716 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 105 MB (+107193kb) [00:00:07]
+// [Engine Memory]: 589 MB (+466450kb) [00:00:07]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: E:\digital-systems\Digital_Systems\project_2_test\project_2_test.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/digital-systems/Digital_Systems/project_2_test/project_2_test.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 794 MB (+183601kb) [00:00:12]
+// [GUI Memory]: 117 MB (+7080kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3765 ms.
+// Tcl Message: open_project E:/digital-systems/Digital_Systems/project_2_test/project_2_test.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 821 MB. GUI used memory: 57 MB. Current time: 10/27/19, 2:37:01 PM IST
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 855.246 ; gain = 175.305 
+// Project name: project_2_test; location: E:/digital-systems/Digital_Systems/project_2_test; part: xc7a35tcpg236-1
+// [Engine Memory]: 891 MB (+59841kb) [00:00:17]
+dismissDialog("Open Project"); // by (cl)
+// a (cl): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 67 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.", 0); // b (F, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.", 0, false, false, false, false, true); // b (F, a) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. ]", 2, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. ]", 2, true, false, false, false, false, true); // ah (O, cl) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false, false, false, false, false, true); // ah (O, cl) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false, false, false, false, true, false); // ah (O, cl) - Popup Trigger
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false, false, false, false, true, false); // ah (O, cl) - Popup Trigger
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. ]", 2, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false); // ah (O, cl)
+// Elapsed time: 43 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false, false, false, false, true, false); // ah (O, cl) - Popup Trigger
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe'.. , [Project 1-19] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe'.. ]", 3, false); // ah (O, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 3); // B (F, cl)
+// PAPropertyPanels.initPanels (FLAG_B24.coe) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, FLAG_B24.coe]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, FLAG_B24.coe]", 4, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// aE (cl): Remove Sources: addNotify
+// by (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe}} 
+dismissDialog("Remove Sources"); // by (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, FLAG_B24.coe]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, FLAG_B24.coe]", 4, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: remove_files  {{E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, Image4_reduced.coe]", 4, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, Image4_reduced.coe]", 4, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: remove_files  {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, Image4_reduced.coe]", 4, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: remove_files  {{E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe}} 

@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Oct 27 01:40:53 2019
-| Host         : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
+| Date         : Sun Oct 27 18:31:05 2019
+| Host         : shivam70 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vga_syncIndex_control_sets_placed.rpt
 | Design       : vga_syncIndex
 | Device       : xc7a35t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     4 |
-|    Minimum number of control sets                        |     4 |
+| Total control sets                                       |    31 |
+|    Minimum number of control sets                        |    31 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    20 |
+| Unused register locations in slices containing registers |    17 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     4 |
-| >= 0 to < 4        |     3 |
+| Total control sets |    31 |
+| >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
+| >= 8 to < 10       |    22 |
 | >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     0 |
+| >= 12 to < 14      |     1 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     1 |
+| >= 16              |     8 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,25 +58,52 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               5 |            4 |
+| No           | No                    | No                     |              13 |            8 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              31 |            8 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             129 |           36 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |             193 |          126 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------+---------------+------------------+------------------+----------------+
-|   Clock Signal   | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+------------------+---------------+------------------+------------------+----------------+
-|  clock_IBUF_BUFG |               |                  |                1 |              1 |
-|  a/CLK           |               |                  |                1 |              2 |
-|  clk_BUFG        |               |                  |                2 |              2 |
-|  clk_BUFG        |               | a/divided_clk    |                8 |             31 |
-+------------------+---------------+------------------+------------------+----------------+
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|   Clock Signal   |                                                                                       Enable Signal                                                                                       |                                                     Set/Reset Signal                                                     | Slice Load Count | Bel Load Count |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_1   | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_4_psbram_and_n_2 |                4 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_2   | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_5_psbram_and_n_3 |                7 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_8   | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_6_psbram_and_n_3 |                6 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_6  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_7_psbram_and_n_1 |                6 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_5  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_6_psbram_and_n_1 |                6 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_4  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_7_psbram_and_n   |                6 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_3  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_6_psbram_and_n   |                6 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_11 | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_8_psbram_and_n_3 |                4 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_7  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_7_psbram_and_n_3 |                5 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_9  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_7_psbram_and_n_2 |                6 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_10  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_6_psbram_and_n_2 |                8 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_17  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_4_psbram_and_n_3 |                5 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_13  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_4_psbram_and_n_1 |                5 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_15  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_4_psbram_and_n   |                5 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_14  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_5_psbram_and_n_1 |                5 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_12 | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_9_psbram_and_n   |                4 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_16  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_5_psbram_and_n   |                5 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_20 | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_8_psbram_and_n   |                5 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_18  | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_5_psbram_and_n_2 |                6 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_19 | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_8_psbram_and_n_2 |                4 |              8 |
+|  clock_IBUF_BUFG | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_REGCEAREGCE_cooolgate_en_sig_21 | inst1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_8_psbram_and_n_1 |                4 |              8 |
+|  clock_IBUF_BUFG | column                                                                                                                                                                                    | column[7]_i_1_n_0                                                                                                        |                3 |              8 |
+|  clock_IBUF_BUFG |                                                                                                                                                                                           |                                                                                                                          |                8 |             13 |
+|  clock_IBUF_BUFG | read                                                                                                                                                                                      |                                                                                                                          |                4 |             16 |
+|  clock_IBUF_BUFG | red[0]_i_1_n_0                                                                                                                                                                            |                                                                                                                          |                4 |             16 |
+|  clock_IBUF_BUFG | blue[0]_i_1_n_0                                                                                                                                                                           |                                                                                                                          |                4 |             16 |
+|  clock_IBUF_BUFG | column                                                                                                                                                                                    |                                                                                                                          |                5 |             16 |
+|  clock_IBUF_BUFG | green[0]_i_1_n_0                                                                                                                                                                          |                                                                                                                          |                4 |             16 |
+|  clock_IBUF_BUFG | top_most[16]_i_1_n_0                                                                                                                                                                      |                                                                                                                          |                7 |             17 |
+|  clock_IBUF_BUFG | addr[16]_i_2_n_0                                                                                                                                                                          | addr[16]_i_1_n_0                                                                                                         |               11 |             17 |
+|  clock_IBUF_BUFG | sel                                                                                                                                                                                       |                                                                                                                          |                8 |             32 |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
 
 

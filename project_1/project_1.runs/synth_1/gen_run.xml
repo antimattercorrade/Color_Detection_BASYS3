@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1572024128">
   <File Type="PA-TCL" Name="vga_syncIndex.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="vga_syncIndex_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="vga_syncIndex_reports.tcl"/>
   <File Type="RDS-RDS" Name="vga_syncIndex.vds"/>
   <File Type="RDS-UTIL" Name="vga_syncIndex_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="vga_syncIndex_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="vga_syncIndex.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="vga_syncIndex_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="vga_syncIndex_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Image.v">

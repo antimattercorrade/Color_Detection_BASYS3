@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 27 14:31:54 2019
+# Process ID: 31168
+# Current directory: E:/digital-systems/Digital_Systems/project_2_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35608 E:\digital-systems\Digital_Systems\project_2_test\project_2_test.xpr
+# Log file: E:/digital-systems/Digital_Systems/project_2_test/vivado.log
+# Journal file: E:/digital-systems/Digital_Systems/project_2_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/digital-systems/Digital_Systems/project_2_test/project_2_test.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Kushagra Sharma/Downloads/project_2_test' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/your_mem.coe', nor could it be found using path 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/your_mem.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/FLAG_B24.coe', nor could it be found using path 'C:/Users/Kushagra Sharma/Downloads/ES 203/FLAG_B24.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/digital-systems/Digital_Systems/ES 203/Image4_reduced.coe', nor could it be found using path 'C:/Users/Kushagra Sharma/Downloads/ES 203/Image4_reduced.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/Image5_reduced.coe', nor could it be found using path 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image5_reduced.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/digital-systems/Digital_Systems/Digital Systems/Image4_reduced.coe', nor could it be found using path 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image4_reduced.coe'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'E:/Kushagra', nor could it be found using path 'C:/Users/Kushagra'.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'E:/digital-systems/AppData/Roaming/Xilinx/Vivado/Sharma/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/Kushagra Sharma/AppData/Roaming/Xilinx/Vivado/Sharma/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:35 . Memory (MB): peak = 813.934 ; gain = 201.641
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 27 14:36:35 2019...

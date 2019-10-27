@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Oct 27 01:27:39 2019
-| Host         : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
+| Date         : Sun Oct 27 14:45:16 2019
+| Host         : shivam70 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file blk_mem_gen_0_utilization_synth.rpt -pb blk_mem_gen_0_utilization_synth.pb
 | Design       : blk_mem_gen_0
 | Device       : 7a35tcpg236-1
