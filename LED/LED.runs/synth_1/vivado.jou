@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 27 01:04:44 2019
+# Process ID: 36332
+# Current directory: C:/Users/Kushagra Sharma/Downloads/ES 203/LED/LED.runs/synth_1
+# Command line: vivado.exe -log LED.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED.tcl
+# Log file: C:/Users/Kushagra Sharma/Downloads/ES 203/LED/LED.runs/synth_1/LED.vds
+# Journal file: C:/Users/Kushagra Sharma/Downloads/ES 203/LED/LED.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LED.tcl -notrace
