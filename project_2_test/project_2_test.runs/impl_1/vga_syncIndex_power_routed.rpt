@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun Oct 27 18:31:36 2019
+| Date             : Sun Oct 27 18:43:48 2019
 | Host             : shivam70 running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_syncIndex_power_routed.rpt -pb vga_syncIndex_power_summary_routed.pb -rpx vga_syncIndex_power_routed.rpx
 | Design           : vga_syncIndex
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.091        |
+| Total On-Chip Power (W)  | 0.090        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.018        |
+| Dynamic (W)              | 0.017        |
 | Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.6         |
+| Junction Temperature (C) | 25.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      817 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      329 |     20800 |            1.58 |
-|   CARRY4       |    <0.001 |       52 |      8150 |            0.64 |
-|   Register     |    <0.001 |      335 |     41600 |            0.81 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      828 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      316 |     20800 |            1.52 |
+|   CARRY4       |    <0.001 |       56 |      8150 |            0.69 |
+|   Register     |    <0.001 |      351 |     41600 |            0.84 |
 |   F7/F8 Muxes  |    <0.001 |       24 |     32600 |            0.07 |
 |   Others       |     0.000 |       68 |       --- |             --- |
-| Signals        |    <0.001 |      860 |       --- |             --- |
+| Signals        |    <0.001 |      865 |       --- |             --- |
 | Block RAM      |     0.001 |       21 |        50 |           42.00 |
-| DSPs           |     0.001 |        1 |        90 |            1.11 |
-| I/O            |     0.012 |       22 |       106 |           20.75 |
+| DSPs           |    <0.001 |        1 |        90 |            1.11 |
+| I/O            |     0.011 |       22 |       106 |           20.75 |
 | Static Power   |     0.073 |          |           |                 |
-| Total          |     0.091 |          |           |                 |
+| Total          |     0.090 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -143,7 +143,7 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| vga_syncIndex          |     0.018 |
+| vga_syncIndex          |     0.017 |
 |   inst1                |     0.003 |
 |     U0                 |     0.003 |
 |       inst_blk_mem_gen |     0.003 |
