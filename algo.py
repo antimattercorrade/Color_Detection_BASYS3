@@ -1,6 +1,6 @@
 
 from PIL import Image
-img = Image.open('Image6_reduced.jpg')
+img = Image.open('Overlap.png')
 px1 = img.load()
 px = {}
 for i in range(img.height):
@@ -9,9 +9,9 @@ for i in range(img.height):
 
 
 def f(px,j,i):
-    return int(bin(px[j,i][0])[2:][:3] + bin(px[j,i][1])[2:][:3] + bin(px[j,i][2])[2:][:2],2)
+    return int(bin(px[j,i][0])[2:].zfill(8)[:3] + bin(px[j,i][1])[2:].zfill(8)[:3] + bin(px[j,i][2])[2:].zfill(8)[:2],2)
 
-colours = {28:['red',0],0:['black',0],14:['green',0],126:['yellow',0],3:['blue',0]}
+colours = {224:['red',0],0:['black',0],28:['green',0],252:['yellow',0],3:['blue',0]}
 
 
 def make_white(px,top_most,r):
@@ -30,7 +30,7 @@ i,j=0,0
 while( i < img.height):
     j = 0
     while(j < img.width):
-        val = int(bin(px[j,i][0])[2:][:3] + bin(px[j,i][1])[2:][:3] + bin(px[j,i][2])[2:][:2],2)
+        val = int(bin(px[j,i][0])[2:].zfill(8)[:3] + bin(px[j,i][1])[2:].zfill(8)[:3] + bin(px[j,i][2])[2:].zfill(8)[:2],2)
         cur_pixel = val
         if val in colours.keys():
             r = 1
@@ -54,7 +54,7 @@ for i in range(img.height):
     for j in range(img.width):
         s.add(px[j,i])
 print(r)
-print(s)
+#print(s)
 
 
 

@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  4 16:00:00 2019
+# Process ID: 24112
+# Current directory: C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.runs/synth_1
+# Command line: vivado.exe -log vga_syncIndex.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_syncIndex.tcl
+# Log file: C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.runs/synth_1/vga_syncIndex.vds
+# Journal file: C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_syncIndex.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 355.641 ; gain = 57.305
+Command: synth_design -top vga_syncIndex -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28928 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 803.766 ; gain = 177.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vga_syncIndex' [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:7]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.runs/synth_1/.Xil/Vivado-24112-LAPTOP-SR0LD7J6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.runs/synth_1/.Xil/Vivado-24112-LAPTOP-SR0LD7J6/realtime/blk_mem_gen_0_stub.v:6]
+ERROR: [Synth 8-660] unable to resolve 'blackconstr1' [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:257]
+WARNING: [Synth 8-567] referenced signal 'redsmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'redmedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'redlarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'bluesmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'bluemedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'bluelarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'greensmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'greenmedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'greenlarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'yellowsmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'yellowmedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'yellowlarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'aquasmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'aquamedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'aqualarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'maroonsmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'maroonmedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'maroonlarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'silversmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'silvermedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'silverlarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'tealsmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'tealmedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'teallarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'limesmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'limemedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'limelarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'olivesmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'olivemedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'olivelarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'fuchsiasmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'fuchsiamedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'fuchsialarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'navysmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'navymedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'navylarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'purplesmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'purplemedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'purplelarge' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'black' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'blacksmall' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+WARNING: [Synth 8-567] referenced signal 'blackmedium' should be on the sensitivity list [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:159]
+ERROR: [Synth 8-6156] failed synthesizing module 'vga_syncIndex' [C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.srcs/sources_1/new/Image.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 869.199 ; gain = 243.352
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 42 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 16:00:31 2019...
