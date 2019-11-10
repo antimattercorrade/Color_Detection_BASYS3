@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.sim/sim_1/behav/xsim/xsim.dir/final_test_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed Nov  6 17:35:25 2019" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Nov 10 10:17:39 2019" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2552052" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "5f2bd2f5-1f77-49c7-9baf-c42e4795bb09" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "5767837f831f4ae4b23c988727d68894" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "78" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "82" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz" -context "user_environment"
@@ -25,9 +25,9 @@ webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "389585750 ps" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "4.67_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "14824_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2739427616 -regid "" -xml C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.sim/sim_1/behav/xsim/xsim.dir/final_test_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.sim/sim_1/behav/xsim/xsim.dir/final_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.sim/sim_1/behav/xsim/xsim.dir/final_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key runtime -value "190379250 ps" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "3.01_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "14932_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2498561527 -regid "" -xml C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.sim/sim_1/behav/xsim/xsim.dir/final_test_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.sim/sim_1/behav/xsim/xsim.dir/final_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.sim/sim_1/behav/xsim/xsim.dir/final_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

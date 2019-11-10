@@ -334,7 +334,8 @@ reg tolerance=5;
 reg [15:0] row,column;
 reg flag2=0;
 //reg [20:0]count=0;
-
+reg ct=0;
+reg [7:0] background;
 reg [7:0]top_most_rgb;
 output reg [7:0] current_rgb;
 output reg [7:0]radius = 0;
@@ -345,8 +346,16 @@ always @(posedge clock)
 	      	
 	   if(flag==0 & ini>=4)// check for color in array and make r=49, store top most address, increase specific color count
 	       begin 
+	       if(ct==0)
+			begin
+				background=out;
+				ct=1;
+			end
             val=out;
+            
             curr_pixel=val;
+            if(background!=val)
+            begin
             case(val)
                 rtemp: begin
                             red=red+1;
@@ -520,22 +529,12 @@ always @(posedge clock)
                             row=0;
                             column=0;
                              end
-                bltemp: begin
-                            black=black+1;
-                            // r=49;
-                            radius=0;
-                            flag=1;
-                            read=0;
-                            top_most=addr;
-                            top_most_rgb = val;
-                            // addr=top_most-49;
-                            row=0;
-                            column=0;
-                             end
+               
                 
                 default: ;
             
             endcase
+            end
              if(addr <85999 & flag==0 & ini>=4)
                 begin
                     addr = addr + 1;
