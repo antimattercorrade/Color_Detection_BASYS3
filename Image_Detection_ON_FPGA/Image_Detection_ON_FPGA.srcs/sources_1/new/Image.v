@@ -260,6 +260,8 @@ module Color_Detection(clock,switch_input,count,small_radius,medium_radius,large
 			end
             		val=out;
             		curr_pixel=val;
+            		if(val!=background)
+            		begin
             		case(val)
                 		rtemp: 	begin
                             		red=red+1;
@@ -407,7 +409,7 @@ module Color_Detection(clock,switch_input,count,small_radius,medium_radius,large
                 		default: ;
             
             	endcase
-        	
+        	end
 		if(addr <85999 & flag==0 & ini>=4)
                 	begin
                     		addr = addr + 1;
