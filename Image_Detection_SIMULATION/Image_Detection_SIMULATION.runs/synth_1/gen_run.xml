@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1572863394">
-  <File Type="PA-TCL" Name="vga_syncIndex.tcl"/>
-  <File Type="REPORTS-TCL" Name="vga_syncIndex_reports.tcl"/>
-  <File Type="RDS-RDS" Name="vga_syncIndex.vds"/>
-  <File Type="RDS-DCP" Name="vga_syncIndex.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573738273">
+  <File Type="PA-TCL" Name="Color_Detection.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Color_Detection_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Color_Detection_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Color_Detection.vds"/>
+  <File Type="RDS-UTIL" Name="Color_Detection_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Color_Detection_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Color_Detection.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Color_Detection_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Color_Detection_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Image.v">
@@ -15,31 +20,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Digital Systems/Image4_reduced.coe">
+    <File Path="$PPRDIR/../Final_test_black.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Digital Systems/Image7_reduced.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../Digital Systems/Final_image.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../Digital Systems/Final_image_test.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../Digital Systems/Final_test.coe">
+    <File Path="$PPRDIR/../Final_test_green.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -47,19 +34,12 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="vga_syncIndex"/>
+      <Option Name="TopModule" Val="Color_Detection"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/constr1.xdc">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ES 203/project_3/project_3.srcs/constrs_1/new/constr1.xdc"/>
-        <Attr Name="ImportTime" Val="1572023510"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

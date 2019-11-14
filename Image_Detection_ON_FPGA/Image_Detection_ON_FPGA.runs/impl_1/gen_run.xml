@@ -1,50 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573143717">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573640454">
+  <File Type="BITSTR-BMM" Name="Color_Detection_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Color_Detection_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Color_Detection_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Color_Detection_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Color_Detection.tcl"/>
-  <File Type="BITSTR-BMM" Name="Color_Detection_bd.bmm"/>
+  <File Type="OPT-TIMING" Name="Color_Detection_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Color_Detection_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="Color_Detection_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Color_Detection_reports.tcl"/>
-  <File Type="OPT-DCP" Name="Color_Detection_opt.dcp"/>
   <File Type="OPT-DRC" Name="Color_Detection_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Color_Detection.hwdef"/>
   <File Type="PWROPT-DCP" Name="Color_Detection_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Color_Detection_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Color_Detection_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Color_Detection_placed.dcp"/>
   <File Type="PLACE-IO" Name="Color_Detection_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Color_Detection_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Color_Detection_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Color_Detection_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Color_Detection_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Color_Detection_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Color_Detection_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="Color_Detection.bgn"/>
+  <File Type="PLACE-TIMING" Name="Color_Detection_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Color_Detection_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Color_Detection.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Color_Detection_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Color_Detection_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Color_Detection_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Color_Detection.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Color_Detection_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Color_Detection_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Color_Detection_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Color_Detection_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Color_Detection_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Color_Detection_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Color_Detection_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Color_Detection.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Color_Detection_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Color_Detection_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="Color_Detection.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Color_Detection_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Color_Detection_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Color_Detection_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="Color_Detection.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Color_Detection_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="Color_Detection_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Color_Detection_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Color_Detection_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Color_Detection_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Color_Detection_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Color_Detection_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Color_Detection_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Color_Detection_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Color_Detection_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Color_Detection_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Color_Detection_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Color_Detection_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Color_Detection_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Color_Detection_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Color_Detection_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Color_Detection_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Color_Detection_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Color_Detection_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Color_Detection.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Color_Detection_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="Color_Detection.rbt"/>
   <File Type="BITSTR-NKY" Name="Color_Detection.nky"/>
   <File Type="BG-DRC" Name="Color_Detection.drc"/>
@@ -79,13 +98,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Final_image.coe">
+    <File Path="$PPRDIR/../Final_test.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Final_test.coe">
+    <File Path="$PPRDIR/../Final_test_black.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Final_test_green.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

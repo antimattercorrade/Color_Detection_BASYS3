@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Kushagra Sharma/Downloads/Week 3/Image_Detection_SIMULATION/Image_Detection_SIMULATION.runs/synth_1'
+HD_PWD='C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image_Detection_SIMULATION/Image_Detection_SIMULATION.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log vga_syncIndex.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_syncIndex.tcl
+EAStep vivado -log Color_Detection.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Color_Detection.tcl

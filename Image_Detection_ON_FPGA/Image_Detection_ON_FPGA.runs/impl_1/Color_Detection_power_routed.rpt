@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Nov  7 21:56:48 2019
+| Date             : Wed Nov 13 15:56:39 2019
 | Host             : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
 | Command          : report_power -file Color_Detection_power_routed.rpt -pb Color_Detection_power_summary_routed.pb -rpx Color_Detection_power_routed.rpx
 | Design           : Color_Detection
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.085        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.012        |
+| Dynamic (W)              | 0.013        |
 | Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     1528 |       --- |             --- |
-|   LUT as Logic |     0.002 |      751 |     20800 |            3.61 |
+| Clocks         |     0.004 |        3 |       --- |             --- |
+| Slice Logic    |     0.002 |     1499 |       --- |             --- |
+|   LUT as Logic |     0.002 |      712 |     20800 |            3.42 |
 |   CARRY4       |    <0.001 |       56 |      8150 |            0.69 |
 |   Register     |    <0.001 |      481 |     41600 |            1.16 |
 |   F7/F8 Muxes  |    <0.001 |       24 |     32600 |            0.07 |
 |   Others       |     0.000 |       68 |       --- |             --- |
-| Signals        |     0.003 |     1281 |       --- |             --- |
+| Signals        |     0.003 |     1253 |       --- |             --- |
 | Block RAM      |     0.002 |       21 |        50 |           42.00 |
 | DSPs           |    <0.001 |        1 |        90 |            1.11 |
-| I/O            |     0.002 |       27 |       106 |           25.47 |
+| I/O            |    <0.001 |       27 |       106 |           25.47 |
 | Static Power   |     0.073 |          |           |                 |
 | Total          |     0.085 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.021 |       0.011 |      0.010 |
+| Vccint    |       1.000 |     0.022 |       0.011 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,7 +143,7 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| Color_Detection        |     0.012 |
+| Color_Detection        |     0.013 |
 |   inst1                |     0.004 |
 |     U0                 |     0.004 |
 |       inst_blk_mem_gen |     0.004 |

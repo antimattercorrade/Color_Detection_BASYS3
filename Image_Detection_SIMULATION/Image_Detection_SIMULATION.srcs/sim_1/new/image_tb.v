@@ -1,42 +1,38 @@
 module final_test;
 reg clock;
-reg reset;
-reg [13:0] input1;
-wire [15:0] temp1;
-wire [15:0] red;
-wire [15:0] blue;
-wire [15:0] green;
-wire [15:0] yellow;
-wire [15:0] aqua;
-wire [15:0] fuchsia;
-wire [15:0] lime;
-wire [15:0] olive;
-wire [15:0] maroon;
-wire [15:0] silver;
-wire [15:0] navy;
-wire [15:0] purple;
-wire [15:0] teal;
-wire [15:0] black;
-wire [7:0] val;
-wire [16:0] addra;
-wire [7:0] radius;
-wire [7:0] current_rgb;
-wire [2:0] smallo;
-wire [2:0] mediumo;
-wire [2:0] largeo;
+reg [12:0] switch_input;
+wire [3:0] count;
+wire [3:0] red;
+wire [3:0] blue;
+wire [3:0] green;
+wire [3:0] yellow;
+wire [3:0] aqua;
+wire [3:0] fuchsia;
+wire [3:0] lime;
+wire [3:0] olive;
+wire [3:0] maroon;
+wire [3:0] silver;
+wire [3:0] navy;
+wire [3:0] purple;
+wire [3:0] teal;
+wire [2:0] small_radius;
+wire [2:0] medium_radius;
+wire [2:0] large_radius;
 
-vga_syncIndex uut (.clock(clock),.reset(reset),.input1(input1), .temp1(temp1),.val(val),.addra(addra),.radius(radius),.current_rgb(current_rgb),.red(red),.blue(blue),.green(green),.yellow(yellow),.aqua(aqua),.fuchsia(fuchsia),.lime(lime),.maroon(maroon),.navy(navy),.olive(olive),.purple(purple),.silver(silver),.teal(teal),.black(black),.smallo(smallo),.mediumo(mediumo),.largeo(largeo));
+Color_Detection uut (.clock(clock),.switch_input(switch_input), .count(count),
+.red(red),.blue(blue),.green(green),.yellow(yellow),.aqua(aqua),.fuchsia(fuchsia),.lime(lime),
+.maroon(maroon),.navy(navy),.olive(olive),.purple(purple),.silver(silver),.teal(teal),
+.small_radius(small_radius),.medium_radius(medium_radius),.large_radius(large_radius));
 
 
 
 initial begin
     clock = 0;
-    reset = 0;
-    # 20 input1 = 14'b00000000001000;
-    //# 20 input1 <= 5'b00010;
-    //# 20 input1 <= 5'b00100;
-    //# 20 input1 <= 5'b01000;
-    //# 20 input1 <= 5'b10000;
+    # 20 switch_input = 13'b0000000001000;
+    //# 20 switch_input = 13'b0000000000001;
+    //# 20 switch_input = 13'b0000000000010;
+    //# 20 switch_input = 13'b1000000000000;
+    //# 20 switch_input = 13'b0100000000000;
 
 end
 

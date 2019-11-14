@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -36,8 +35,9 @@ set_property ip_cache_permissions {read write} [current_project]
 add_files {{C:/Users/Kushagra Sharma/Downloads/IMage detection algo/Image4_reduced.coe}}
 add_files {{C:/Users/Kushagra Sharma/Downloads/IMage detection algo/Image7_reduced.coe}}
 add_files {{C:/Users/Kushagra Sharma/Downloads/IMage detection algo/Image5.coe}}
-add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Final_image.coe}}
-add_files {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/Final_test.coe}}
+add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Final_test.coe}}
+add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Final_test_black.coe}}
+add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Final_test_green.coe}}
 read_verilog -library xil_defaultlib {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v}}
 read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/Image_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc}}]

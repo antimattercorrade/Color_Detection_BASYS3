@@ -4,7 +4,6 @@ module Color_Detection(clock,switch_input,count,small_radius,medium_radius,large
     input [12:0] switch_input;
     
     reg [7:0] val;
-    reg [7:0] curr_pixel;
     
     reg [2:0] redsmall=0;
     reg [2:0] redmedium=0;
@@ -73,11 +72,9 @@ module Color_Detection(clock,switch_input,count,small_radius,medium_radius,large
 	reg [7:0] stemp=8'd219;  //silver
 	reg [7:0] ttemp=8'd18;   //teal
   
-	//reg [7:0] white=8'd255;  //background color
 	reg [7:0] background;
 
-	reg [16:0] top_most=0,temp=0;
-	integer i=0,j=0;
+	reg [16:0] top_most=0;
  
 	reg read = 0;          //read==0 read mode ... read==1 write mode
 	reg [16:0] addr = 0;
@@ -133,7 +130,7 @@ module Color_Detection(clock,switch_input,count,small_radius,medium_radius,large
                     				end
 
  			13'b0000000000010: 	begin
-                    				count=blue;
+                    				count=blue;  
                     				small_radius=bluesmall;
                     				medium_radius=bluemedium;
                     				large_radius=bluelarge;
@@ -259,7 +256,7 @@ module Color_Detection(clock,switch_input,count,small_radius,medium_radius,large
 				ct=1;
 			end
             		val=out;
-            		curr_pixel=val;
+            		
             		if(val!=background)
             		begin
             		case(val)
@@ -435,7 +432,7 @@ module Color_Detection(clock,switch_input,count,small_radius,medium_radius,large
                     		end
                   	if(flag2 == 1)
                   		begin 
-                    			if(row<=2*(radius+tolerance))                       // whiten the rectangular area around the circle
+                    			if(row<=2*(radius+tolerance))                       // make the rectangular area around the circle background colored
                     				begin
                         				if(column>2*(radius+tolerance))
                         					begin
