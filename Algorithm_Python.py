@@ -1,6 +1,9 @@
 
 from PIL import Image
-img = Image.open('Overlap.png')
+import datetime
+
+start_time = datetime.datetime.now()
+img = Image.open('Final_test.png')
 px1 = img.load()
 px = {}
 for i in range(img.height):
@@ -53,6 +56,10 @@ s = set()
 for i in range(img.height):
     for j in range(img.width):
         s.add(px[j,i])
+
+end_time = datetime.datetime.now()
+c = end_time - start_time
+print("{}:{}".format(c.seconds,c.microseconds))
 print(r)
 #print(s)
 
