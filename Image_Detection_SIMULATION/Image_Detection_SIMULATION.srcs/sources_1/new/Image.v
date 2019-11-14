@@ -1,14 +1,14 @@
 `timescale 1ns / 1ps
 module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchsia,lime,maroon,navy,olive,purple,silver,teal,
                        small_radius,medium_radius,large_radius);
-    input clock;
-    input [12:0] switch_input;
+    input clock;   //clock of FPGA
+    input [12:0] switch_input;      //Input from switches
     
-    reg [7:0] val;
+    reg [7:0] val;            //Stores 8-bit RGB value of colors while accessing the image's coe file
     
-    reg [2:0] redsmall=0;
-    reg [2:0] redmedium=0;
-    reg [2:0] redlarge=0;
+    reg [2:0] redsmall=0;      //Register to store count of red circles in small radius range
+    reg [2:0] redmedium=0;     //Register to store count of red circles in mdeium radius range
+    reg [2:0] redlarge=0;     //Register to store count of red circles in large radius range
     
     reg [2:0] greensmall=0;
     reg [2:0] greenmedium=0;
@@ -73,16 +73,16 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
 	reg [7:0] stemp=8'd219;  //silver
 	reg [7:0] ttemp=8'd18;   //teal
   
-	reg [7:0] background;
+	reg [7:0] background;  //Register to store background color
 
-	reg [16:0] top_most=0;
+	reg [16:0] top_most=0;  //Register to store current pixel's RGB value while traversing
  
-	reg read = 0;          //read==0 read mode ... read==1 write mode
-	reg [16:0] addr = 0;
-	reg [7:0] in = 0;     // inuput to BRAM in write mode
-	wire [7:0] out;
+	reg read = 0;          //If read==0 then read mode ... If read==1 then write mode
+	reg [16:0] addr = 0;   //Stores the address of pixels in image's coe file
+	reg [7:0] in = 0;     // Input to BRAM in write mode
+	wire [7:0] out;       //Output from BRAM in read mode
 	
-	blk_mem_gen_0  inst1(
+	blk_mem_gen_0  inst1(    //Instantiation of Block RAM
   	.clka(clock), 
   	.wea(read), 
   	.addra(addr), 
@@ -91,11 +91,11 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
   	.douta(out) 
 	);
 
-	reg flag=0;       // it becomes 0 when radius is calculated for a circle 
+	reg flag=0;       // It becomes 0 when radius is calculated for a circle 
     
-    integer ini=0;
+    integer ini=0;   //variable to skip initial clock cycles to instantiate Block RAM 
     
-    output reg [3:0] red=0;
+    output reg [3:0] red=0;         
     output reg [3:0] blue=0;
     output reg [3:0] green=0;
     output reg [3:0] aqua=0;
@@ -115,7 +115,7 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
     output reg [3:0] count;
   
     
-
+//Map outputs to count and small,medium and large radius after calculating them in another always block
 	always@(switch_input,yellow,red,blue,green,aqua,maroon,silver,teal,lime,olive,fuchsia,navy,purple,redsmall,redmedium,redlarge,
                 greensmall,greenmedium,greenlarge,bluesmall,bluemedium,bluelarge,yellowsmall,yellowmedium,yellowlarge,aquasmall,
                 aquamedium,aqualarge,fuchsiasmall,fuchsiamedium,fuchsialarge,maroonsmall,maroonmedium,maroonlarge,limesmall,
@@ -224,7 +224,7 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
  			            end
 	 	endcase
 	end
-	reg [7:0] temp3;
+	reg [7:0] temp3;     //Skip initial clock cycles 
     	always@(posedge clock)
 	begin
 		if(ini<=3)
@@ -237,19 +237,19 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
    			ini=ini+1;
 	end
 
-	reg tolerance=5;
+	reg tolerance=5;  //Tolerance for radius calculation
 
-	reg [15:0] row,column;
+	reg [15:0] row,column;  //Length and Breadth respectively of rectangle colored to background color 
 	reg flag2=0;
 
-	reg [7:0]top_most_rgb;
+	reg [7:0]top_most_rgb;  //Stores RGB value of top_most pixel encountered
 	reg [7:0] current_rgb;
-	reg [7:0]radius = 0;
+	reg [7:0]radius = 0;   //Stores radius of current circle
 	reg ct=0;
 	always @(posedge clock)
 	begin	   
 	                 
-		if(flag==0 & ini>=4)     // check for color in array, store top most address, increase specific color count
+		if(flag==0 & ini>=4)     //Check for color in array, store top most address, increase specific color count
 	       	begin 
 			if(ct==0)
 			begin
@@ -410,14 +410,14 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
         	end
 		if(addr <85999 & flag==0 & ini>=4)
                 	begin
-                    		addr = addr + 1;
+                    		addr = addr + 1;  //Increase address by 1 to traverse in image pixel by pixel
                  	end
          	else if(flag==0)
                 	begin
-                    		addr=85999;
+                    		addr=85999;  //Stop after reaching final pixel value
                 	end         
          end
-               if(flag==1)
+               if(flag==1)    //Algorithm for radius detection by traversing 'x' distance down and 'x' distance right till different RGB values are encountered
                   	begin                         
                   	if(flag2 == 0)
                     		begin
@@ -433,7 +433,7 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
                     		end
                   	if(flag2 == 1)
                   		begin 
-                    			if(row<=2*(radius+tolerance))                       // make the rectangular area around the circle background colored
+                    			if(row<=2*(radius+tolerance))                   //Algorithm to make the rectangular area around the circle background colored
                     				begin
                         				if(column>2*(radius+tolerance))
                         					begin
@@ -446,7 +446,7 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
                     				end
                     			else
                     				begin 
-                     				case(top_most_rgb)
+                     				case(top_most_rgb)     //Count the number of circles of specific colors in small, medium and large radius range
                						rtemp: 	begin
                             					if(radius<=15)
                                 					redsmall=redsmall+1;
@@ -567,7 +567,7 @@ module Color_Detection(clock,switch_input,count,red,blue,green,yellow,aqua,fuchs
                      					default:;
                       	 	endcase
 
-                        	radius=0;
+                        	radius=0;   //Set all temporary registers to 0 so as to calculate count in another cycle
                         	flag=0;
                         	flag2 = 0;
                         	addr=top_most+1;

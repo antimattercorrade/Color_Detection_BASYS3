@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573738273">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573742971">
   <File Type="PA-TCL" Name="Color_Detection.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Color_Detection_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Color_Detection_reports.tcl"/>

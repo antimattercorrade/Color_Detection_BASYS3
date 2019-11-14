@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Nov 14 19:05:16 2019
+| Date         : Thu Nov 14 20:23:08 2019
 | Host         : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file Color_Detection_clock_utilization_routed.rpt
 | Design       : Color_Detection

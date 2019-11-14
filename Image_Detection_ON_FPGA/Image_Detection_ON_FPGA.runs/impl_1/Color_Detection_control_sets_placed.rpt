@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Nov 13 15:55:49 2019
+| Date         : Thu Nov 14 20:13:36 2019
 | Host         : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Color_Detection_control_sets_placed.rpt
 | Design       : Color_Detection
@@ -73,19 +73,19 @@ Table of Contents
 +------------------+--------------------+------------------+------------------+----------------+
 |   Clock Signal   |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +------------------+--------------------+------------------+------------------+----------------+
-|  clock_IBUF_BUFG | aqua[3]_i_1_n_0    |                  |                1 |              4 |
-|  clock_IBUF_BUFG | blue[3]_i_1_n_0    |                  |                1 |              4 |
-|  clock_IBUF_BUFG | fuchsia[3]_i_1_n_0 |                  |                1 |              4 |
-|  clock_IBUF_BUFG | green[3]_i_1_n_0   |                  |                2 |              4 |
 |  clock_IBUF_BUFG | lime[3]_i_1_n_0    |                  |                1 |              4 |
-|  clock_IBUF_BUFG | maroon[3]_i_1_n_0  |                  |                1 |              4 |
 |  clock_IBUF_BUFG | navy[3]_i_1_n_0    |                  |                1 |              4 |
-|  clock_IBUF_BUFG | purple[3]_i_1_n_0  |                  |                1 |              4 |
+|  clock_IBUF_BUFG | maroon[3]_i_1_n_0  |                  |                1 |              4 |
 |  clock_IBUF_BUFG | olive[3]_i_1_n_0   |                  |                1 |              4 |
+|  clock_IBUF_BUFG | purple[3]_i_1_n_0  |                  |                1 |              4 |
 |  clock_IBUF_BUFG | red[3]_i_1_n_0     |                  |                1 |              4 |
 |  clock_IBUF_BUFG | silver[3]_i_1_n_0  |                  |                2 |              4 |
 |  clock_IBUF_BUFG | teal[3]_i_1_n_0    |                  |                1 |              4 |
 |  clock_IBUF_BUFG | yellow[3]_i_1_n_0  |                  |                1 |              4 |
+|  clock_IBUF_BUFG | aqua[3]_i_1_n_0    |                  |                1 |              4 |
+|  clock_IBUF_BUFG | blue[3]_i_1_n_0    |                  |                1 |              4 |
+|  clock_IBUF_BUFG | fuchsia[3]_i_1_n_0 |                  |                1 |              4 |
+|  clock_IBUF_BUFG | green[3]_i_1_n_0   |                  |                2 |              4 |
 |  clock_IBUF_BUFG | ct9_out            |                  |                5 |              8 |
 |  clock_IBUF_BUFG | in                 |                  |                5 |              8 |
 |  clock_IBUF_BUFG | addr[16]_i_1_n_0   |                  |               12 |             17 |
