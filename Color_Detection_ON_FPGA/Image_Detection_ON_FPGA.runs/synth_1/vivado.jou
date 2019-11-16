@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Nov 14 20:10:11 2019
-# Process ID: 48440
-# Current directory: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1
+# Start of session at: Sat Nov 16 13:56:05 2019
+# Process ID: 68656
+# Current directory: C:/Users/Kushagra Sharma/Downloads/Week 4/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1
 # Command line: vivado.exe -log Color_Detection.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Color_Detection.tcl
-# Log file: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1/Color_Detection.vds
-# Journal file: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Image_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1\vivado.jou
+# Log file: C:/Users/Kushagra Sharma/Downloads/Week 4/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1/Color_Detection.vds
+# Journal file: C:/Users/Kushagra Sharma/Downloads/Week 4/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Color_Detection.tcl -notrace

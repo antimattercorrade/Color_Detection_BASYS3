@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573742404">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573892626">
   <File Type="PA-TCL" Name="Color_Detection.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Color_Detection_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Color_Detection_reports.tcl"/>
   <File Type="RDS-RDS" Name="Color_Detection.vds"/>
   <File Type="RDS-UTIL" Name="Color_Detection_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Color_Detection_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Color_Detection.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Color_Detection_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Color_Detection_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Image.v">
@@ -17,37 +20,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../IMage detection algo/Image4_reduced.coe">
+    <File Path="$PPRDIR/../../Digital Systems/Final_test.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../IMage detection algo/Image7_reduced.coe">
+    <File Path="$PPRDIR/../../Digital Systems/Final_test_black.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../IMage detection algo/Image5.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Final_test.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Final_test_black.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Final_test_green.coe">
+    <File Path="$PPRDIR/../../Digital Systems/Final_test_green.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
