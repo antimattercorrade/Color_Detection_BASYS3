@@ -40,6 +40,39 @@ We use case statements to classify the circles based on the 8-bit color.
 
 ## Simulation Graphs
 
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/Simulation_Graphs/Black_Background_Simulation.PNG)
 
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/Simulation_Graphs/Green_Background_Simulation.PNG)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/Simulation_Graphs/Red_Circles_Simulation.PNG)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/Simulation_Graphs/Same_Radius_White_Background.PNG)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/Simulation_Graphs/White_Background_Simulation.PNG)
+
+
+
+## Test Images
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/images/Final_test.png)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/images/Final_test_black.png)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/images/Final_test_green.png)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/images/Red.png)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/images/Test_final.png)
+
+
+![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/images/test.png)
 
 ​ 
