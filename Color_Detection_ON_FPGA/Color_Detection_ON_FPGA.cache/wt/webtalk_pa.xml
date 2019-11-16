@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Nov 16 19:34:48 2019">
+<application name="pa" timeStamp="Sat Nov 16 20:00:03 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f14e3e9c2ab041e4abd5d0437104727b" type="ProjectID"/>
-<property name="ProjectIteration" value="54" type="ProjectIteration"/>
+<property name="ProjectIteration" value="55" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -35,7 +35,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenHardwareManager" value="31" type="JavaHandler"/>
 <property name="OpenProject" value="17" type="JavaHandler"/>
 <property name="RecustomizeCore" value="56" type="JavaHandler"/>
-<property name="RunBitgen" value="49" type="JavaHandler"/>
+<property name="RunBitgen" value="50" type="JavaHandler"/>
 <property name="RunImplementation" value="6" type="JavaHandler"/>
 <property name="RunSchematic" value="5" type="JavaHandler"/>
 <property name="RunSynthesis" value="12" type="JavaHandler"/>
@@ -57,8 +57,8 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Gui Handlers">
 <property name="AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="6" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="222" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="45" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="223" type="GuiHandlerData"/>
+<property name="BaseDialog_YES" value="46" type="GuiHandlerData"/>
 <property name="BoardChooser_BOARD_TABLE" value="4" type="GuiHandlerData"/>
 <property name="ClosePlanner_YES" value="4" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="25" type="GuiHandlerData"/>
@@ -69,9 +69,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CreateConstraintsFilePanel_FILE_NAME" value="1" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="3" type="GuiHandlerData"/>
 <property name="ExpReportTreePanel_EXP_REPORT_TREE_TABLE" value="12" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="491" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="492" type="GuiHandlerData"/>
 <property name="FloorplanEditor_METRIC" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="135" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="136" type="GuiHandlerData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GraphicalView_SELECT" value="1" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="37" type="GuiHandlerData"/>
@@ -133,6 +133,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PAViews_PROJECT_SUMMARY" value="66" type="GuiHandlerData"/>
 <property name="PAViews_SCHEMATIC" value="3" type="GuiHandlerData"/>
 <property name="PlanAheadTab_SHOW_FLOW_NAVIGATOR" value="2" type="GuiHandlerData"/>
+<property name="PlanAhead_CONTINUE" value="1" type="GuiHandlerData"/>
 <property name="PrimitivesMenu_HIGHLIGHT_LEAF_CELLS" value="1" type="GuiHandlerData"/>
 <property name="ProgramDebugTab_OPEN_TARGET" value="10" type="GuiHandlerData"/>
 <property name="ProgramDebugTab_PROGRAM_DEVICE" value="31" type="GuiHandlerData"/>
@@ -156,8 +157,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_IP_HIERARCHY" value="5" type="GuiHandlerData"/>
 <property name="StaleRunDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="StateMonitor_RESET_RUN" value="2" type="GuiHandlerData"/>
+<property name="StateMonitor_RESET_STEP" value="1" type="GuiHandlerData"/>
 <property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="7" type="GuiHandlerData"/>
-<property name="SyntheticaStateMonitor_CANCEL" value="7" type="GuiHandlerData"/>
+<property name="SyntheticaStateMonitor_CANCEL" value="8" type="GuiHandlerData"/>
 <property name="SystemBuilderView_ADD_IP" value="3" type="GuiHandlerData"/>
 <property name="SystemBuilderView_PINNING" value="4" type="GuiHandlerData"/>
 <property name="SystemTreeView_SYSTEM_TREE" value="6" type="GuiHandlerData"/>
