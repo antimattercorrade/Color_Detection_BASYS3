@@ -28,3 +28,12 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
 open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 783.496 ; gain = 181.750
 update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Nov 16 20:00:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 20:03:29 2019...

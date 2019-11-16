@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Nov 16 19:28:27 2019
+// Date        : Sat Nov 16 18:55:08 2019
 // Host        : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {C:/Users/Kushagra Sharma/Downloads/Digital
-//               Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_stub.v}
+// Command     : write_verilog -force -mode synth_stub -rename_top blk_mem_gen_0 -prefix
+//               blk_mem_gen_0_ blk_mem_gen_0_stub.v
 // Design      : blk_mem_gen_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

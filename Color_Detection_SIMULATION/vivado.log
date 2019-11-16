@@ -2,10 +2,10 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Nov 16 19:16:14 2019
-# Process ID: 48752
+# Start of session at: Sat Nov 16 21:55:32 2019
+# Process ID: 5268
 # Current directory: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17672 C:\Users\Kushagra Sharma\Downloads\Digital Systems\Color_Detection_SIMULATION\Color_Detection_SIMULATION.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20148 C:\Users\Kushagra Sharma\Downloads\Digital Systems\Color_Detection_SIMULATION\Color_Detection_SIMULATION.xpr
 # Log file: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/vivado.log
 # Journal file: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION\vivado.jou
 #-----------------------------------------------------------
@@ -25,37 +25,31 @@ WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the director
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 827.305 ; gain = 161.742
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 820.219 ; gain = 147.125
 update_compile_order -fileset sources_1
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Final_test.coe'
-set_property -dict [list CONFIG.Coe_File {C:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test.coe}] [get_ips blk_mem_gen_0]
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Final_test.coe'
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date
-[Sat Nov 16 19:17:34 2019] Launched synth_1...
-Run output will be captured here: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.runs/synth_1/runme.log
-reset_run synth_1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_black.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Final_test_black.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_black.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_black.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Final_test_black.coe'
 reset_target all [get_files  {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
 export_ip_user_files -of_objects  [get_files  {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset blk_mem_gen_0] {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
+INFO: [Project 1-386] Moving file 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
 generate_target all [get_files  {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
 INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
 INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
-generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 942.617 ; gain = 0.000
+generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 961.648 ; gain = 10.465
 catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 20d2f79824752281; cache size = 4.386 MB.
 export_ip_user_files -of_objects [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
 create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
-launch_runs -jobs 8 blk_mem_gen_0_synth_1
-[Sat Nov 16 19:18:54 2019] Launched blk_mem_gen_0_synth_1...
-Run output will be captured here: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.runs/blk_mem_gen_0_synth_1/runme.log
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci'
 export_simulation -of_objects [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -directory {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.ip_user_files} -ipstatic_source_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/modelsim} {questa=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/questa} {riviera=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/riviera} {activehdl=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
 launch_simulation
 INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
@@ -64,12 +58,13 @@ INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-54] Inspecting design source files for 'final_test' in fileset 'sim_1'...
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test_black.coe'
 INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
 INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test_green.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test_black.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test.coe'
 INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Red.coe'
 INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Test_final.coe'
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
@@ -105,7 +100,8 @@ Compiling module xil_defaultlib.Color_Detection
 Compiling module xil_defaultlib.final_test
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot final_test_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 961.648 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -127,10 +123,10 @@ source final_test.tcl
  Block Memory Generator module loading initial data...
  Block Memory Generator data initialization complete.
 Block Memory Generator module final_test.uut.inst1.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 982.129 ; gain = 37.355
+xsim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 991.551 ; gain = 29.902
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_test_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 982.129 ; gain = 37.355
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 991.551 ; gain = 29.902
 run all
 blk_mem_gen_v8_4_3 WARNING: Address 15150 is outside range for A Write
 blk_mem_gen_v8_4_3 WARNING: Address 15150 is outside range for A Read
@@ -1051,154 +1047,8 @@ blk_mem_gen_v8_4_3 WARNING: Address 15258 is outside range for A Read
 blk_mem_gen_v8_4_3 WARNING: Address 153de is outside range for A Write
 blk_mem_gen_v8_4_3 WARNING: Address 153de is outside range for A Read
 WARNING: [Simulator 45-29] Cannot open source file /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v: file does not exist.
-run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 982.367 ; gain = 0.000
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 993.480 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Test_final.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Test_final.coe'
-set_property -dict [list CONFIG.Coe_File {C:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Test_final.coe}] [get_ips blk_mem_gen_0]
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Test_final.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Test_final.coe'
-reset_target all [get_files  {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
-export_ip_user_files -of_objects  [get_files  {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -sync -no_script -force -quiet
-delete_ip_run [get_files -of_objects [get_fileset blk_mem_gen_0] {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
-INFO: [Project 1-386] Moving file 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
-generate_target all [get_files  {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
-generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 982.367 ; gain = 0.000
-catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
-export_ip_user_files -of_objects [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
-launch_runs -jobs 8 blk_mem_gen_0_synth_1
-[Sat Nov 16 19:25:13 2019] Launched blk_mem_gen_0_synth_1...
-Run output will be captured here: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.runs/blk_mem_gen_0_synth_1/runme.log
-export_simulation -of_objects [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -directory {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.ip_user_files} -ipstatic_source_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/modelsim} {questa=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/questa} {riviera=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/riviera} {activehdl=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-launch_simulation
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'final_test' in fileset 'sim_1'...
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Test_final.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test_green.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test_black.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Final_test.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/Red.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim/test.coe'
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj final_test_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/ip/blk_mem_gen_0_1/sim/blk_mem_gen_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/new/Image.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Color_Detection
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sim_1/new/image_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module final_test
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
-"xelab -wto 8b844008e34c4d1e92466d9299d9cb35 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot final_test_behav xil_defaultlib.final_test xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8b844008e34c4d1e92466d9299d9cb35 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot final_test_behav xil_defaultlib.final_test xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.srcs/sources_1/new/Image.v:89]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
-Compiling module xil_defaultlib.blk_mem_gen_0
-Compiling module xil_defaultlib.Color_Detection
-Compiling module xil_defaultlib.final_test
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot final_test_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_SIMULATION/Color_Detection_SIMULATION.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "final_test_behav -key {Behavioral:sim_1:Functional:final_test} -tclbatch {final_test.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source final_test.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator module final_test.uut.inst1.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 982.367 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_test_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 982.367 ; gain = 0.000
-run all
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_project
-open_project {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.xpr}
-Scanning sources...
-Finished scanning sources
-WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Kushagra Sharma/Downloads/Kushagra'.
-WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/AppData/Roaming/Xilinx/Vivado/Sharma/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 996.500 ; gain = 0.000
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/Digital Systems/coefficient_files/Final_test_green.coe}}] -no_script -reset -force -quiet
-remove_files  {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/Digital Systems/coefficient_files/Final_test_green.coe}}
-reset_run synth_1
-reset_run blk_mem_gen_0_synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
-ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
-ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
-CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'c:/Xilinx/Vivado/2019.1/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
-
-ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
-ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'blk_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
-ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
-Failed to generate IP 'blk_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_green.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Final_test_green.coe'
-set_property -dict [list CONFIG.Coe_File {C:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_green.coe}] [get_ips blk_mem_gen_0]
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_green.coe' provided. It will be converted relative to IP Instance files '../../../../../coefficient_files/Final_test_green.coe'
-generate_target all [get_files  {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
-generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1050.586 ; gain = 0.000
-catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
-export_ip_user_files -of_objects [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
-launch_runs -jobs 8 blk_mem_gen_0_synth_1
-[Sat Nov 16 19:34:33 2019] Launched blk_mem_gen_0_synth_1...
-Run output will be captured here: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/blk_mem_gen_0_synth_1/runme.log
-export_simulation -of_objects [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -directory {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.ip_user_files} -ipstatic_source_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/compile_simlib/modelsim} {questa=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/compile_simlib/questa} {riviera=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/compile_simlib/riviera} {activehdl=C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Sat Nov 16 19:34:48 2019] Launched blk_mem_gen_0_synth_1, synth_1...
-Run output will be captured here:
-blk_mem_gen_0_synth_1: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/blk_mem_gen_0_synth_1/runme.log
-synth_1: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/synth_1/runme.log
-[Sat Nov 16 19:34:48 2019] Launched impl_1...
-Run output will be captured here: C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 21:59:29 2019...
