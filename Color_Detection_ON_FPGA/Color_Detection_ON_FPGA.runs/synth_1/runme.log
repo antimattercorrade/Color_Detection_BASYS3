@@ -15,19 +15,19 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 29212 
+INFO: Helper process launched with PID 45160 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 803.270 ; gain = 176.270
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 803.258 ; gain = 176.633
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Color_Detection' [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v:2]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1/.Xil/Vivado-13528-LAPTOP-SR0LD7J6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1/.Xil/Vivado-13528-LAPTOP-SR0LD7J6/realtime/blk_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-6014] Unused sequential element temp3_reg was removed.  [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v:232]
-WARNING: [Synth 8-6014] Unused sequential element val_reg was removed.  [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v:259]
-WARNING: [Synth 8-6014] Unused sequential element current_rgb_reg was removed.  [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v:424]
-INFO: [Synth 8-6155] done synthesizing module 'Color_Detection' (2#1) [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Color_Detection' [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/new/Image.v:2]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/synth_1/.Xil/Vivado-19220-LAPTOP-SR0LD7J6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/synth_1/.Xil/Vivado-19220-LAPTOP-SR0LD7J6/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element temp3_reg was removed.  [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/new/Image.v:232]
+WARNING: [Synth 8-6014] Unused sequential element val_reg was removed.  [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/new/Image.v:259]
+WARNING: [Synth 8-6014] Unused sequential element current_rgb_reg was removed.  [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/new/Image.v:424]
+INFO: [Synth 8-6155] done synthesizing module 'Color_Detection' (2#1) [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/new/Image.v:2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 870.078 ; gain = 243.078
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 869.184 ; gain = 242.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -40,47 +40,47 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 870.078 ; gain = 243.078
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 869.184 ; gain = 242.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 870.078 ; gain = 243.078
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 869.184 ; gain = 242.559
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'inst1'
-Finished Parsing XDC File [c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'inst1'
-Parsing XDC File [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc]
-Finished Parsing XDC File [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Color_Detection_propImpl.xdc].
+Parsing XDC File [c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'inst1'
+Finished Parsing XDC File [c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'inst1'
+Parsing XDC File [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Color_Detection_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Color_Detection_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 998.031 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 995.176 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 998.031 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 995.176 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'inst1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1007.379 ; gain = 380.379
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1004.375 ; gain = 377.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1007.379 ; gain = 380.379
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1004.375 ; gain = 377.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1007.379 ; gain = 380.379
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1004.375 ; gain = 377.750
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v:436]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/new/Image.v:436]
 INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "read" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "green" won't be mapped to RAM because it is too sparse
@@ -96,7 +96,7 @@ INFO: [Synth 8-5546] ROM "purple" won't be mapped to RAM because it is too spars
 INFO: [Synth 8-5546] ROM "silver" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "teal" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1007.379 ; gain = 380.379
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1004.375 ; gain = 377.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -198,7 +198,7 @@ INFO: [Synth 8-5546] ROM "read" won't be mapped to RAM because it is too sparse
 DSP Report: Generating DSP addr2, operation Mode is: A*(B:0x1ae).
 DSP Report: operator addr2 is absorbed into DSP addr2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1007.379 ; gain = 380.379
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1004.375 ; gain = 377.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -225,13 +225,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1016.719 ; gain = 389.719
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.875 ; gain = 389.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1201.477 ; gain = 574.477
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1198.402 ; gain = 571.777
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,7 +243,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1201.477 ; gain = 574.477
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1198.402 ; gain = 571.777
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,7 +267,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1200.227 ; gain = 573.602
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -280,7 +280,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1200.227 ; gain = 573.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,25 +292,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1200.227 ; gain = 573.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1200.227 ; gain = 573.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1200.227 ; gain = 573.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1200.227 ; gain = 573.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -349,28 +349,28 @@ Report Instance Areas:
 |1     |top      |       |  1198|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1200.227 ; gain = 573.602
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1204.289 ; gain = 439.988
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1204.289 ; gain = 577.289
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 1200.227 ; gain = 438.410
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1200.227 ; gain = 573.602
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'Color_Detection' is not ideal for floorplanning, since the cellview 'Color_Detection' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1204.289 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1200.227 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 45 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1204.289 ; gain = 817.605
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1204.289 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:30 . Memory (MB): peak = 1200.227 ; gain = 814.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1200.227 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1/Color_Detection.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/synth_1/Color_Detection.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Color_Detection_utilization_synth.rpt -pb Color_Detection_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 18:24:20 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 19:40:08 2019...

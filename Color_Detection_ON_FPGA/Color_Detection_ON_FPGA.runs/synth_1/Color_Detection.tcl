@@ -23,18 +23,18 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.xpr} [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo {c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_green.coe}}
-read_verilog -library xil_defaultlib {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/new/Image.v}}
-read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc}}]
+add_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/coefficient_files/Final_test_green.coe}}
+read_verilog -library xil_defaultlib {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/new/Image.v}}
+read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -44,8 +44,8 @@ set_property used_in_implementation false [get_files -all {{c:/Users/Kushagra Sh
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc}}]
+read_xdc {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

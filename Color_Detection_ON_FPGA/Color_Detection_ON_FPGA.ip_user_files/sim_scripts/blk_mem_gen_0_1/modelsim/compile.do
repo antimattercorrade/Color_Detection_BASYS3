@@ -19,7 +19,7 @@ vlog -work blk_mem_gen_v8_4_3 -64 -incr \
 "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib -64 -incr \
-"../../../../Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/sim/blk_mem_gen_0.v" \
+"../../../../Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/sim/blk_mem_gen_0.v" \
 
 
 vlog -work xil_defaultlib \

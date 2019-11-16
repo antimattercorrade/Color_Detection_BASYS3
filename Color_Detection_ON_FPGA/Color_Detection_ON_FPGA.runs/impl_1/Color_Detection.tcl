@@ -70,14 +70,14 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1/Color_Detection.dcp}}
-  read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
-  read_xdc {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc}}
+  add_files -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/synth_1/Color_Detection.dcp}}
+  read_ip -quiet {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
+  read_xdc {{C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/constrs_1/new/constr1.xdc}}
   link_design -top Color_Detection -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

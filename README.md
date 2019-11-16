@@ -38,6 +38,8 @@ We use case statements to classify the circles based on the 8-bit color.
 
 * This process continues until the traversing pointer reaches the last pixel of the image.​ 
 
+## Simulation Graphs
+
 
 
 ​ 

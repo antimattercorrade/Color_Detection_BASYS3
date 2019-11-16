@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.runs/synth_1'
+HD_PWD='C:/Users/Kushagra Sharma/Downloads/Digital Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

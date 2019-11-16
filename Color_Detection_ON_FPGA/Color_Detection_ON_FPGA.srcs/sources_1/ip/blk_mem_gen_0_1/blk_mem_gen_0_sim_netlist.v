@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Nov 16 18:22:57 2019
+// Date        : Sat Nov 16 19:38:08 2019
 // Host        : LAPTOP-SR0LD7J6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {C:/Users/Kushagra Sharma/Downloads/Digital
-//               Systems/Color_Detection_ON_FPGA/Image_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_sim_netlist.v}
+//               Systems/Color_Detection_ON_FPGA/Color_Detection_ON_FPGA.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0_sim_netlist.v}
 // Design      : blk_mem_gen_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
