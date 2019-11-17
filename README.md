@@ -10,6 +10,17 @@ The general pipeline of our implementation involves pre-processing an image file
 After running the implementation on BASYS3, it is expected that the output LEDs show the count of the occurrence based on their colours along with separate outputs which tell the number of circles belonging to the small, medium and large range.
 The small range is from 0 to 15 pixels, medium range comprise of 16 to 30 pixels and large range has circles greater than 30 pixels radius.​
 
+## Installation
+
+You will need Vivado xilinx ISE suite to test the verilog code and implement it on FPGA. [here](https://www.xilinx.com/support/download.html) is the link to download Vivado.
+
+To convert your image to coefficient file, run Coe_Converter.py and give the name of your image. The image should be in the same directory as the python script. You will need pillow module of python to run this script.
+To install pillow, run the command, `sudo pip install pillow`
+
+#### Important note:
+The image size should be 430X200. You need to use the IP core generator of Vivado to instantiate the block RAM.
+If you wish to run only simulations, then work in the `color_detection_SIMULATION` folder, otherwise if you want to implement the verilog code on BASYS3, then use `color_detection_ON_FPGA`
+
 ## Workflow
 
 First, the image is converted into its coefficients file (.COE) using python. During this step, the 24-bit true color coding is changed to 8 bit color.​
@@ -22,7 +33,7 @@ There are flag variables to shift the control flow from detecting the top most p
 
 We use case statements to classify the circles based on the 8-bit color.
 
-### Here are the details of the algorithm that this module implements:
+#### Here are the details of the algorithm that this module implements:
 
 * For counting the circles, the image data is traversed row wise to find the first pixel which has a color that is different from the background color of the image. This pixel is the top-most point of some circle. The count of that color is increased by one.​
 
@@ -75,4 +86,4 @@ We use case statements to classify the circles based on the 8-bit color.
 
 ![alt text](https://github.com/antimattercorrade/Digital_Systems/blob/master/images/test.png)
 
-​ 
+​
